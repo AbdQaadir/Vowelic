@@ -1,0 +1,147 @@
+body{
+    background: rgba(0, 90, 75, 0.856);
+    /* font-family: 'Karla', sans-serif; */
+    /* font-family: 'Oxygen', sans-serif; */
+    color: #fff;
+    font-family: 'Cairo', sans-serif;
+}
+#main h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+#main p{
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+#start-btn{
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    color: #000000;
+    background: #fff;
+    cursor: pointer;
+    padding: 7px 12px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0, 0.3);
+}
+#start-btn:focus{
+    transform: scale(0.98);
+}
+#start-btn:default {
+    transform: scale(1.1);
+}
+.active{
+    display: flex !important;
+}
+.inactive{
+    display: none !important;
+}
+#main{
+    /* display: none !important; */
+    background: #01253d75;
+    /* margin: 20px auto; */
+    margin-top: 7%;
+    padding: 40px 20px;
+    border-radius: 30px;
+    color: #ffffff;
+}
+/* #game{
+    
+} */
+#game p:first-child{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-size: 2rem;
+    color: rgb(0, 255, 242);
+}
+#game p:nth-child(2){
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 2rem;
+    color: aqua;
+}
+#points, #time{
+    font-weight: 4rem;
+    color: #fff;
+    font-weight: bold;
+
+}
+#game h3{
+    font-size: 4rem;
+    color: rgb(46, 243, 200);
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#answer{
+    font-size: 1.6rem;
+    border-radius: 20px;
+    outline: none;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    background: rgba(0,0,0,.5);
+    margin-bottom: 10px;
+    color: #fff;
+    width: 120px;
+    border: none;
+}
+#answer::placeholder{
+    padding: 10px;
+}
+.btn{
+    margin:10px;
+    font-size: 1.5rem;
+    padding: 8px 15px;
+    outline: none;
+    border-radius: 20px;
+    background: sandybrown;
+}
+
+
+p#status-msg{
+    top: 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: sandybrown;
+    --animate-delay: 3s;
+    --animate-duration: 2s;
+    
+}
+.bounceIn{
+    --animate-duration: 5s;
+}
+#addTime{
+    /* display: block;    */
+    --animate-duration: 3s;
+}
+.foot-note{
+    font-size: 1.5rem;
+}
+.fab{
+    font-size: 2rem;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+.mobileBtn{
+    font-size: 2.3rem;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    width: 60px;
+    margin: 5px 10px;
+    cursor: pointer;
+    background-color: sandybrown;
+    color: seashell;
+}
+.mobileBtn{
+
+}
+.mobile{
+    display: none;
+}

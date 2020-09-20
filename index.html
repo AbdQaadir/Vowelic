@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsiveness.css" />
+    <script
+      src="https://kit.fontawesome.com/cdc96d509d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Vowelic Game</title>
+  </head>
+  <body>
+    <div id="audios">
+      <audio id="m15">
+        <source
+          src="./assets/15-seconds-added1590311683.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <audio id="m13">
+        <source
+          src="./assets/13-seconds-added1590311717.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <audio id="m12">
+        <source
+          src="./assets/12-seconds-added1590311669.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <audio id="m10">
+        <source
+          src="./assets/10-seconds-added1590311697.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <audio id="m8">
+        <source
+          src="./assets/8-seconds-added1590311761.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <audio id="m3">
+        <source
+          src="./assets/3-seconds-added1590311745.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <audio id="gameEndAudio">
+        <source src="./assets/gameEnd.wav" type="audio/mpeg" />
+      </audio>
+    </div>
+
+    <div class="container py-3" id="main">
+      <div
+        class="row justify-content-center align-items-center instruction animated fadeIn"
+      >
+        <div class="col-md-8 col-sm-10">
+          <h1>VOWELIC: <i>your fav word game.</i></h1>
+          <p>Count vowels and earn points!</p>
+          <p>Easy and fun to play.</p>
+          <p>Let the counting begin!</p>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-10 text-center">
+          <input type="submit" value="Start Game" id="start-btn" />
+        </div>
+      </div>
+      <div
+        class="row justify-content-center animated fadeIn"
+        style="display: none !important"
+        id="game"
+      >
+        <div class="col-10 my-3">
+          <h1 class="hs">High Score: <span class="high-score"></span></h1>
+        </div>
+        <div class="col-10 text-center" id="game-on">
+          <p><span class="animated" id="points">0</span> pts</p>
+          <p><span id="time" class="animated fadeIn infinite"></span> s</p>
+
+          <p id="status-msg" class="animated bounceIn">
+            Level <span id="level" class="animated">1</span>
+          </p>
+
+          <h3 id="word" class="mt-5 pt-2 animated fadeIn"></h3>
+          <input type="text" id="answer" autofocus />
+          <br />
+
+          <input type="submit" class="btn btn" value="Next" id="submit-btn" />
+
+          <div class="mobile">
+            <input type="submit" class="mobileBtn" value="0" id="mobile-btn0" />
+            <input type="submit" class="mobileBtn" value="1" id="mobile-btn1" />
+
+            <input type="submit" class="mobileBtn" value="2" id="mobile-btn2" />
+            <input type="submit" class="mobileBtn" value="3" id="mobile-btn3" />
+
+            <input type="submit" class="mobileBtn" value="4" id="mobile-btn4" />
+            <input type="submit" class="mobileBtn" value="5" id="mobile-btn5" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="row justify-content-center py-5 animated fadeIn"
+        id="game-over"
+      >
+        <div class="col-10 text-center my-3">
+          <h1 style="font-weight: bold">GAME OVER</h1>
+          <p>Your Points: <span id="totalPoints">0</span>pts</p>
+          <input
+            type="submit"
+            class="btn"
+            style="background-color: rgb(90, 90, 90); color: #f9f9f9"
+            value="Restart Game"
+            id="restart-btn"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <div class="row d-flex justify-content-center mt-2">
+        <div class="col-10 text-center">
+          <p class="foot-note">Developed by Lateef Quadri.</p>
+          <p>
+            <a href="https://twitter.com/abd_qaadir"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js" async></script>
+    <script type="module" src="/js/words.js"></script>
+  </body>
+</html>
